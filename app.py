@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 # ------------------------
 # Load Your Fine-Tuned Model (safetensors)
 # ------------------------
-model_path = "C:\Users\APOORVA\Downloads\reconstruction_model (1)"  # where model and tokenizer are saved
+model_path = r"C:\Users\APOORVA\Downloads\reconstruction_model"  # where model and tokenizer are saved
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_path, torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32)
