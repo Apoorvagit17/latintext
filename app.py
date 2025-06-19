@@ -33,7 +33,7 @@ def reconstruct(text):
 # Helper: Translate via Gemini
 # ------------------------
 def translate_with_gemini(text):
-    model_g = genai.GenerativeModel("gemini-pro")
+    model_g = genai.GenerativeModel("gemini-2.0-flash")
     prompt = f"""You are a Latin language expert. Translate the following Latin sentence into English:
 
     Latin: {text}
